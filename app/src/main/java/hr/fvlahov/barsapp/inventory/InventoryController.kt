@@ -12,6 +12,8 @@ class InventoryController : Fragment() {
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
+        //Get Inventory
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_inventory, container, false)
     }
