@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.TextView
 import hr.fvlahov.barsapp.MainActivity
 import hr.fvlahov.barsapp.R
+import hr.fvlahov.barsapp.dal.implementations.UserRepo
 import hr.fvlahov.barsapp.model.Bar
 import hr.fvlahov.barsapp.model.User
 import hr.fvlahov.barsapp.utils.BarUtils
@@ -24,16 +25,14 @@ class Login : AppCompatActivity() {
         val error = findViewById<TextView>(R.id.tv_Error)
         error.visibility = View.INVISIBLE
 
-        /*if(user != null){
+        var user = UserRepo().authenticateUser(findViewById<EditText>(R.id.et_Username).text.toString(), findViewById<EditText>(R.id.et_Password).text.toString())
+
+        if(user != null){
             BarUtils.currentUser = user
-            BarUtils.currentBar = user.bar
         } else{
             error.visibility = View.VISIBLE
-        }*/
+        }
 
-        var bar = Bar(1, "Pivnica")
-        BarUtils.currentUser = User(1,"Franko", "Pass", "Franko", true, bar)
-        BarUtils.currentBar = bar
 
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
