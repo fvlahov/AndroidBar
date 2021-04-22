@@ -12,11 +12,11 @@ namespace Bar_Web_API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class UserController : ControllerBase
+    public class BarController : ControllerBase
     {
         private readonly ApplicationDbContext context;
 
-        public UserController(ApplicationDbContext context)
+        public BarController(ApplicationDbContext context)
         {
             this.context = context;
         }
@@ -32,7 +32,7 @@ namespace Bar_Web_API.Controllers
                 bar = context.Bars.
                     Include(b => b.Inventory).
                     ThenInclude(i => i.Items).
-                    Include(b => b.Users).
+                    Include(b => b.Users.Where(u => u.Id == user.Id)).
                     ToList().
                     Find(b => b.Users.ToList().Find(u => u.Id == user.Id) == user);
             }

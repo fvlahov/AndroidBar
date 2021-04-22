@@ -1,4 +1,5 @@
 package hr.fvlahov.barsapp.model
 
-data class Inventory (var idInventory: Int, var items: List<Item>) {
+@kotlinx.serialization.Serializable
+data class Inventory (var id: Int, var items: List<Item>) {
 }

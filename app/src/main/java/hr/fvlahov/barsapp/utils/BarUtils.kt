@@ -9,7 +9,7 @@ import javax.crypto.spec.SecretKeySpec
 
 class BarUtils {
     companion object {
-        val encryptionPassword = "AJQTSSjdXh"
         lateinit var currentUser: User
+        lateinit var currentBar: Bar
     }
 }

@@ -4,5 +4,5 @@ import hr.fvlahov.barsapp.model.Bar
 import hr.fvlahov.barsapp.model.User
 
 interface IRepoBar {
-    fun getBarByUserId(userId: Int) : Bar
+    fun getBarByUser(userName: String, password: String): Bar
 }
