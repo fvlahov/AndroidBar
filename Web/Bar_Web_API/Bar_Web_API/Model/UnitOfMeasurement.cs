@@ -7,6 +7,8 @@ namespace Bar_Web_API.Model
 {
     public enum UnitOfMeasurement
     {
-
+        BOTTLE, 
+        KG, 
+        LITRE
     }
 }
