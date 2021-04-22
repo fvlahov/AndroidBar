@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="headerFontSize">20dp</dimen>
-    <dimen name="headerMarginBottom">5dp</dimen>
-    <dimen name="defaultPadding">10dp</dimen>
-</resources>

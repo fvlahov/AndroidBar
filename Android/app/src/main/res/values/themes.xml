@@ -1,0 +1,62 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BarsApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/orange_500</item>
+        <item name="colorPrimaryVariant">@color/orange_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/green_500</item>
+        <item name="colorSecondaryVariant">@color/green_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/background</item>
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="buttonStyle">@style/RobotoButtonStyle</item>
+    </style>
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="TextHeader" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/headerFontSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">@dimen/headerMarginBottom</item>
+    </style>
+
+    <style name="TextAttention" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/orange_500</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- BUTTONS -->
+    <style name="btn_Green" parent="android:Widget.Button">
+        <item name="backgroundTint">@color/green_500</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="btn_Red" parent="android:Widget.Button">
+        <item name="backgroundTint">@color/orange_700</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="btn_Check" parent="android:Widget.Button">
+        <item name="backgroundTint">@color/green_700</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

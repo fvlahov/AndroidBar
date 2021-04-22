@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="headerFontSize">20dp</dimen>
+    <dimen name="headerMarginBottom">5dp</dimen>
+    <dimen name="defaultPadding">10dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="viewPager_MarginBottom">50dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="fabSize">70dp</dimen>
+    <dimen name="spacing">10dp</dimen>
+</resources>

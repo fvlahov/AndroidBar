@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:minWidth="300dp"
+    android:minHeight="200dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".inventory.UpdateItems">
+
+
+    <TextView
+        style="@style/TextHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ItemName"
+        android:id="@+id/tv_ItemName"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            style="@style/btn_Green"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/btn_Add"/>
+
+        <Space
+            android:layout_width="@dimen/spacing"
+            android:layout_height="match_parent" />
+
+        <TextView
+            style="@style/TextHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="#"
+            android:id="@+id/tv_CurrentSupply"/>
+
+        <Space
+            android:layout_width="@dimen/spacing"
+            android:layout_height="match_parent" />
+
+        <Button
+            style="@style/btn_Red"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_Remove"
+            android:text="-" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="@dimen/spacing"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green_700"
+            android:text="@string/potvrdi"
+            android:id="@+id/btn_UpdateItemConfirm"/>
+
+        <Space
+            android:layout_width="@dimen/spacing"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_UpdateItemCancel"
+            android:text="@string/odbaci" />
+    </LinearLayout>
+
+</LinearLayout>
