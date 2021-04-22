@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Bar_Web_API.Model;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,10 @@ namespace Bar_Web_API.DAL
         {
         }
 
-        public DbSet<Course> Courses { get; set; }
+        public DbSet<Bar> Bars { get; set; }
+        public DbSet<Inventory> Inventories { get; set; }
+        public DbSet<Item> Items { get; set; }
+        public DbSet<User> Users { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
