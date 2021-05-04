@@ -17,6 +17,7 @@ namespace Bar_Web_API.DAL
         public DbSet<Inventory> Inventories { get; set; }
         public DbSet<Item> Items { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Shift> Shifts { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

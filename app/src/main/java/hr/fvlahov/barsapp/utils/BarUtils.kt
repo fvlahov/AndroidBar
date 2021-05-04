@@ -9,7 +9,7 @@ import javax.crypto.spec.SecretKeySpec
 
 class BarUtils {
     companion object {
-        lateinit var currentUser: User
-        lateinit var currentBar: Bar
+        var currentUser: User? = null
+        var currentBar: Bar? = null
     }
 }

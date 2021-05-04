@@ -56,11 +56,42 @@ namespace Bar_Web_API.DAL
                 context.Users.Add(user);
             }
 
+            var shifts = new Shift[]
+            {
+                new Shift
+                {
+                    DateTime = DateTime.Parse("05/03/2021 07:00"),
+                    ShiftDurationHours = 8,
+                    ShiftStatus = ShiftStatus.AWAITING_CONFIRMATION,
+                    Worker = users[0]
+                },
+                new Shift
+                {
+                    DateTime = DateTime.Parse("05/03/2021 14:00"),
+                    ShiftDurationHours = 4,
+                    ShiftStatus = ShiftStatus.CONFIRMED,
+                    Worker = users[1]
+                },
+                new Shift
+                {
+                    DateTime = DateTime.Parse("05/03/2021 17:00"),
+                    ShiftDurationHours = 5,
+                    ShiftStatus = ShiftStatus.DECLINED,
+                    Worker = users[2]
+                },
+            };
+
+            foreach (var shift in shifts)
+            {
+                context.Shifts.Add(shift);
+            }
+
             var bar = new Bar
             {
                 BarName = "Caffe Bar Gal",
                 Inventory = inv,
-                Users = users
+                Users = users,
+                Shifts = shifts
             };
 
             context.Bars.Add(bar);

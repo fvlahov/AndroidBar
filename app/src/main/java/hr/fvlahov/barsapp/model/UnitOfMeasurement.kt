@@ -1,5 +1,9 @@
 package hr.fvlahov.barsapp.model
 
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+
+@Serializable
 enum class UnitOfMeasurement () : IMeasurable {
     BOTTLE (){
         override fun getCorrectMeasure(quantity: Int?): String = if(quantity in 2..4) "boce" else "boca"

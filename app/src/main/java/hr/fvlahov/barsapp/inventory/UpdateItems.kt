@@ -70,7 +70,7 @@ class UpdateItems : DialogFragment() {
     }
 
     private fun confirmUpdateItem(view: View) {
-        ItemRepo().updateItem(item!!)
+        view.findViewById<TextView>(R.id.tv_CurrentSupply).text = item?.currentSupply.toString()
         this.dialog?.dismiss()
 
     }

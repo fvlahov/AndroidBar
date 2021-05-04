@@ -8,7 +8,7 @@ data class Item(
     var name: String,
     var minSupply: Int,
     var currentSupply: Int,
-    var unitOfMeasurement: UnitOfMeasurement
-) : Serializable {
+    var unitOfMeasurement: UnitOfMeasurement?
+) : Serializable{
 
 }

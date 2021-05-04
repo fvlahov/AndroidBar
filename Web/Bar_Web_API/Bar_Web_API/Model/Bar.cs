@@ -11,5 +11,6 @@ namespace Bar_Web_API.Model
         public string BarName { get; set; }
         public Inventory Inventory { get; set; }
         public ICollection<User> Users { get; set; }
+        public ICollection<Shift> Shifts { get; set; }
     }
 }

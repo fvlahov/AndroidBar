@@ -24,9 +24,9 @@ class InventoryController : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         //Get Inventory
-        var inventory = BarUtils.currentBar.inventory
+        var inventory = BarUtils.currentBar?.inventory
         var itemLayout = view.findViewById<LinearLayout>(R.id.ll_Items)
-        for(item in inventory.items){
+        for(item in inventory?.items!!){
             var fragMan = childFragmentManager
             var fragTransaction = fragMan.beginTransaction()
 
@@ -37,7 +37,7 @@ class InventoryController : Fragment() {
         }
 
         val fab: View = view.findViewById(R.id.fab_Add)
-        if(!BarUtils.currentUser.isAdmin){
+        if(!(BarUtils.currentUser!!.isAdmin)){
             fab.visibility = View.INVISIBLE
         }
         fab.setOnClickListener { view ->

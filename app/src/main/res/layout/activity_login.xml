@@ -20,7 +20,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/defaultPadding"
-        android:id="@+id/et_Username">
+        android:id="@+id/et_Username"
+        android:text="ana">
 
     </EditText>
     <TextView
@@ -33,7 +34,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:id="@+id/et_Password">
+        android:id="@+id/et_Password"
+        android:text="lozinka">
     </EditText>
     <TextView
         android:layout_width="match_parent"
