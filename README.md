@@ -1,2 +1,2 @@
 # AndroidBar
-Universitry course project
+University course project
